@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+addOne() {
+  local outVar=$1
+  return $outVar+1
+}
+
+addTwo() {
+  local outVar=$1
+  outVar=$outVar+2
+}
+
+addThree() {
+  local outVar=$1
+  eval $outVar=$outVar+3
+}
+
+addFour() {
+  local outVar=$1
+  let sum=$outVar+4
+  eval $outVar=\$sum
+}
+
+#PARAM=2
+#echo $PARAM
+#addOne PARAM
+#echo $PARAM
+
+#PARAM=2
+#echo $PARAM
+#addTwo PARAM
+#echo $PARAM
+
+#PARAM2=2
+#echo $PARAM2
+#addThree PARAM2
+#echo $PARAM2
+
+PARAM3=2
+addFour PARAM3
+echo $PARAM3
+

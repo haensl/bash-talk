@@ -1,2 +1,3 @@
-# bash-talk
-Slides and examples from my talk "Linux, the Bash &amp; everything".
+# Linux, the Bash & everything
+
+Slides and examples from my tech talk about Linux/Unix, shells and scripting.

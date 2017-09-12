@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+for i in $( ls );
+do
+  echo "item: ${i}"
+done
+
+
+for i in $(seq 1 10);
+do
+  echo "item: ${i}"
+done
+
+COUNTER=0
+while [ $COUNTER -lt 10 ];
+do
+  echo "COUNTER: ${COUNTER}"
+  COUNTER=COUNTER+1
+done

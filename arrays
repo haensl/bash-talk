@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+ARR=(one two three)
+
+echo ${ARR[*]}
+
+echo $ARR[*]
+
+echo ${ARR[@]}
+
+echo $ARR[@]
+
+echo ${ARR[2]}
+
+ARR[3]=four
+
+echo ${ARR[*]}
+
+declare -a BRR
+
+BRR=(${ARR[*]} five)
+
+echo ${BRR[*]}
+
+echo ${#ARR[*]}
+
+echo ${ARR[*]:1:2}

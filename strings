@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+echo $TEST
+
+echo ${TEST:-test}
+
+TEST="test hello"
+echo $TEST
+echo $TEST2
+
+${TEST2:=test}
+
+echo $TEST2
+
+echo ${#TEST}
+
+echo ${#TEST2}
+
+TEST3=3
+
+echo ${#TEST3}
+
+echo ${TEST2:2}
+
+echo ${TEST2:1:2}
+
+echo ${TEST2#te}
+
+echo ${TEST2%t}
+
+echo ${TEST2/te/ab}
